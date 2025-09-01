@@ -4,7 +4,7 @@ A beautiful, fully responsive cooking recipe website featuring authentic dishes 
 
 ## ✨ Features
 
-- **Global Recipe Collection**: Recipes from 7 continents and 50+ countries
+- **Global Recipe Collection**: Recipes from 5 continents and 15+ countries
 - **Beautiful UI/UX**: Modern design with smooth animations and hover effects
 - **User Authentication**: Sign up, sign in, and sign out functionality using Firebase
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
@@ -193,4 +193,5 @@ This project is open source and available under the [MIT License](LICENSE).
 **Enjoy exploring the world through food! 🌍🍽️**
 
 *Built with ❤️ for food lovers everywhere*
+
 
