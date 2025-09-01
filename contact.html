@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - World on a Plate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="the logo.png" alt="World on a Plate Logo" style="height:50px;">
+                 <span class="site-title">World on a Plate</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-signin" onclick="openModal('signin')">Sign In</button>
+                <button class="btn-signup" onclick="openModal('signup')">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you! Have questions, suggestions, or want to share your own recipe?</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>Whether you have a question about a recipe, want to share your cooking experience, or have suggestions for new dishes to feature, we're here to listen.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h3>Email Us</h3>
+                                <p>hello@worldonaplate.com</p>
+                                <p>We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-details">
+                                <h3>Live Chat</h3>
+                                <p>Available Monday-Friday, 9 AM - 6 PM EST</p>
+                                <p>Click the chat bubble in the bottom right</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <h3>Social Media</h3>
+                                <p>Follow us for daily recipe inspiration</p>
+                                <div class="social-links-contact">
+                                    <a href="#" class="social-link">Instagram</a>
+                                    <a href="#" class="social-link">Facebook</a>
+                                    <a href="#" class="social-link">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="recipe-question">Recipe Question</option>
+                                <option value="suggestion">Recipe Suggestion</option>
+                                <option value="feedback">Website Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for new recipes and cooking tips
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I submit my own recipe?</h3>
+                    <p>We love featuring community recipes! Send us your recipe with photos and story to recipes@worldonaplate.com. Our team will review and potentially feature it on our site.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Are all recipes tested?</h3>
+                    <p>Yes! Every recipe on our site is tested multiple times by our team of chefs to ensure accuracy and delicious results.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I request a specific recipe?</h3>
+                    <p>Absolutely! We're always looking for new recipes to feature. Send us your request and we'll do our best to find or create the perfect recipe for you.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer cooking classes?</h3>
+                    <p>We're working on launching virtual cooking classes! Sign up for our newsletter to be the first to know when they're available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>World on a Plate</h3>
+                    <p>Connecting cultures through the universal language of food.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 World on a Plate | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signin')">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signinForm" class="auth-form">
+                <input type="email" id="signinEmail" placeholder="Email" required>
+                <input type="password" id="signinPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="switchModal('signin', 'signup')">Sign Up</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signup')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm" class="auth-form">
+                <input type="text" id="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="switchModal('signup', 'signin')">Sign In</a></p>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="script-simple.js"></script>
+</body>
+</html>
