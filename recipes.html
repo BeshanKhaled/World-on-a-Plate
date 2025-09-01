@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - World on a Plate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="the logo.png" alt="World on a Plate Logo" style="height:50px;">
+                 <span class="site-title">World on a Plate</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-signin" onclick="openModal('signin')">Sign In</button>
+                <button class="btn-signup" onclick="openModal('signup')">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Global Recipe Collection</h1>
+            <p>Discover authentic dishes from every corner of the world</p>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <!-- Authentication Gate Overlay -->
+            <div id="authGate" class="auth-gate-overlay">
+                <div class="auth-gate-content">
+                    <div class="auth-gate-icon">🔒</div>
+                    <h2>Sign In Required</h2>
+                    <p>Please sign in to access our exclusive recipe collection</p>
+                    <div class="auth-gate-buttons">
+                        <button class="btn-signin" onclick="openModal('signin')">Sign In</button>
+                        <button class="btn-signup" onclick="openModal('signup')">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="continent-tabs">
+                <button class="tab-btn active" onclick="showContinent('asia')">Asia</button>
+                <button class="tab-btn" onclick="showContinent('europe')">Europe</button>
+                <button class="tab-btn" onclick="showContinent('africa')">Africa</button>
+                <button class="tab-btn" onclick="showContinent('americas')">Americas</button>
+                <button class="tab-btn" onclick="showContinent('oceania')">Australia</button>
+            </div>
+
+            <!-- Asia Recipes -->
+            <div id="asia" class="continent-recipes active">
+                <h2>Asian Cuisine</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="pad-thai-image.jpg" alt="Pad Thai - Thailand's famous noodle dish with shrimp, rice noodles, and fresh garnishes" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Pad Thai (Thailand)</h3>
+                            <p>Thailand's most famous noodle dish with tamarind, fish sauce, and peanuts</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Easy</span>
+                                <span class="time">30 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='pad-thai-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Biriyani-image.jpg" alt="Biryani - Aromatic rice dish with tender meat and fragrant spices" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Biryani (India)</h3>
+                            <p>Aromatic rice dish with tender meat and fragrant spices</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">60 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='biryani-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Sushi-image.jpg" alt="Sushi - Fresh fish and rice wrapped in nori with wasabi and ginger" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Sushi (Japan)</h3>
+                            <p>Fresh fish and rice wrapped in nori with wasabi and ginger</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Hard</span>
+                                <span class="time">45 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='sushi-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe Recipes -->
+            <div id="europe" class="continent-recipes">
+                <h2>European Cuisine</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="Paella-image.jpg" alt="Paella - Valencian rice dish with seafood, chicken, and saffron" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Paella (Spain)</h3>
+                            <p>Valencian rice dish with seafood, chicken, and saffron</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">45 min</span>
+                                </div>
+                            <button class="recipe-btn" onclick="window.location.href='paella-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Pasta Carbonara-image.jpg" alt="Pasta Carbonara - Classic Roman pasta with eggs, cheese, and pancetta" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Pasta Carbonara (Italy)</h3>
+                            <p>Classic Roman pasta with eggs, cheese, and pancetta</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Easy</span>
+                                <span class="time">25 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='pasta-carbonara-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Coq au Vin-image.jpg" alt="Coq au Vin - Braised chicken in red wine with mushrooms and pearl onions" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Coq au Vin (France)</h3>
+                            <p>Braised chicken in red wine with mushrooms and pearl onions</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">90 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='coq-au-vin-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Africa Recipes -->
+            <div id="africa" class="continent-recipes">
+                <h2>African Cuisine</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="Tagine-image.jpg" alt="Tagine - Slow-cooked stew with meat, vegetables, and aromatic spices" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Tagine (Morocco)</h3>
+                            <p>Slow-cooked stew with meat, vegetables, and aromatic spices</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">120 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='tagine-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Jollof-Rice-image.png" alt="Jollof Rice - One-pot rice dish with tomatoes, peppers, and spices" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Jollof Rice (Nigeria)</h3>
+                            <p>One-pot rice dish with tomatoes, peppers, and spices</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Easy</span>
+                                <span class="time">40 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='jollof-rice-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Bobotie-image.jpg" alt="Bobotie - Spiced minced meat baked with an egg-based topping" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Bobotie (South Africa)</h3>
+                            <p>Spiced minced meat baked with an egg-based topping</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">75 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='bobotie-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Americas Recipes -->
+            <div id="americas" class="continent-recipes">
+                <h2>American Cuisine</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="Tacos-image.jpg" alt="Tacos - Soft corn tortillas filled with seasoned meat and fresh toppings" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Tacos (Mexico)</h3>
+                            <p>Soft corn tortillas filled with seasoned meat and fresh toppings</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Easy</span>
+                                <span class="time">20 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='tacos-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="BBQ-Ribs-image.jpg" alt="BBQ Ribs - Slow-smoked halal beef ribs with tangy barbecue sauce" class="recipe-image">
+                        <div class="recipe-content">
+                                                    <h3>BBQ Ribs (USA)</h3>
+                        <p>Slow-smoked halal beef ribs with tangy barbecue sauce</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Hard</span>
+                                <span class="time">240 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='bbq-ribs-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Feijoada-image.jpg" alt="Feijoada - Black bean stew with pork and beef, served with rice" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Feijoada (Brazil)</h3>
+                            <p>Black bean stew with pork and beef, served with rice</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">180 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='feijoada-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Australia Recipes -->
+            <div id="oceania" class="continent-recipes">
+                <h2>Australian Cuisine</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="Pavlova-image.jpg" alt="Pavlova - Light meringue dessert with fresh fruit and cream" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Pavlova (Australia)</h3>
+                            <p>Light meringue dessert with fresh fruit and cream</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">90 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='pavlova-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="meat-pie-image.png" alt="Australian Meat Pie - Flaky pastry filled with savory minced beef and gravy" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Australian Meat Pie (Australia)</h3>
+                            <p>Flaky pastry filled with savory minced beef and rich gravy</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Medium</span>
+                                <span class="time">90 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='australian-meat-pie-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="Lamington-image.jpg" alt="Lamington - Sponge cake squares coated in chocolate and coconut" class="recipe-image">
+                        <div class="recipe-content">
+                            <h3>Lamington (Australia)</h3>
+                            <p>Sponge cake squares coated in chocolate and coconut</p>
+                            <div class="recipe-meta">
+                                <span class="difficulty">Easy</span>
+                                <span class="time">60 min</span>
+                            </div>
+                            <button class="recipe-btn" onclick="window.location.href='lamington-recipe.html'">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>World on a Plate</h3>
+                    <p>Connecting cultures through the universal language of food.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 World on a Plate | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signin')">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signinForm" class="auth-form">
+                <input type="email" id="signinEmail" placeholder="Email" required>
+                <input type="password" id="signinPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Sign In</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="switchModal('signin', 'signup')">Sign Up</a></p>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signup')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm" class="auth-form">
+                <input type="text" id="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="switchModal('signup', 'signin')">Sign In</a></p>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="script-simple.js"></script>
+</body>
+</html>
