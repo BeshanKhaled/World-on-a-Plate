@@ -104,22 +104,27 @@ The website is fully responsive and works on:
 ### Asia
 - **Thailand**: Pad Thai
 - **India**: Biryani
+- **Japan**: Sushi
 
 ### Europe
 - **Spain**: Paella
 - **Italy**: Pasta Carbonara
+- **France**: Coq au Vin
 
 ### Africa
 - **Morocco**: Tagine
 - **Nigeria**: Jollof Rice
+- **South Africa**: Bobotie
 
 ### Americas
 - **Mexico**: Tacos
 - **USA**: BBQ Ribs
+- **Brazil**: Feijoada
 
 ### Australia
 - **Australia**: Pavlova
 - **Australia**: Australian Meat Pie
+- **Australia**: Lamington
 
 ## 🚀 Deployment
 
@@ -178,6 +183,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - **Unsplash**: Beautiful food photography
+- **Pexels**: Recipe videos and stock media
 - **Google Fonts**: Typography
 - **Firebase**: Authentication and backend services
 - **Modern CSS**: Grid, Flexbox, and animations
