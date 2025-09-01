@@ -1,6 +1,6 @@
 # World on a Plate 🌍🍽️
 
-A beautiful, responsive cooking recipe website featuring authentic dishes from every continent around the world. Built with HTML, CSS, JavaScript, and Firebase for authentication.
+A beautiful, fully responsive cooking recipe website featuring authentic dishes from every continent around the world. Built with HTML, CSS, JavaScript, and Firebase for secure authentication.
 
 ## ✨ Features
 
@@ -187,3 +187,4 @@ This project is open source and available under the [MIT License](LICENSE).
 **Enjoy exploring the world through food! 🌍🍽️**
 
 *Built with ❤️ for food lovers everywhere*
+
